@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onload="onLoadQuoteFetcher()">
+    <main>
+        <nav>
+            <h1>Random Quote Generator</h1>
+            <div id="nav-btn-box">
+                <a class="active" href="./index.html">Quote Machine</a>
+                <a href="./about.html">Learn more</a>
+            </div>
+        </nav>
+        <section>
+            <h2>
+                Pre-loaded quote of the day:
+            </h2>
+            <div id="quote-fill-one"></div>
+            
+        </section>
+        <section>
+            <h2>Generate quotes yourself - just click the button below!</h2>
+            <button onclick="onClickQuoteFetcher()" id="generate-button">Generate</button>
+            <h3 id="quote-title">Your quote is the following:</h3>
+            <div id="quote-fill-two"></div>
+        </section>
+    </main>
+</body>
+</html>
